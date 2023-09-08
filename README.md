@@ -1,7 +1,5 @@
 # Diskord
 
-<a name="readme-top"></a>
-
 <!--
 !!! IMPORTANT !!!
 
@@ -51,7 +49,9 @@ REQUIRED SECTIONS:
 ### Tech Stack <a name="tech-stack"></a>
 
 > Diskord was majorly built with Django.
+
 > Django serves as the robust foundation of this project, providing a comprehensive and secure web framework for rapid development.
+
 > Its built-in features, including authentication, admin interface, and database handling, streamline development tasks, allowing us to focus on crafting a seamless user experience.
 
 <!-- Features -->
@@ -59,7 +59,9 @@ REQUIRED SECTIONS:
 ### Key Features <a name="key-features"></a>
 
 > Seamless, real-time chat functionality that fosters instant communication among users.
+
 > Create and customize user profiles, including profile pictures and bios, to personalize the user experience.
+
 > Easily create, join, and manage chat rooms, facilitating organized conversations and community building.
 
 - **[Real-time Chat]**
@@ -112,7 +114,7 @@ To run the project, execute the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Chinonso Wisdom Agbo**
 
@@ -127,7 +129,9 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > User Account Recovery: Implement a "Forgot Password" feature that allows users to reset their passwords in case they forget them. Users can request a password reset link via email, which will securely verify their identity and allow them to set a new password.
+
 > Enhanced Upload Size Limit: To improve app performance and prevent excessive resource usage, consider implementing a more robust system for limiting the size of file uploads. This ensures that large uploads do not slow down the application, improving overall user experience.
+
 > Mobile App Conversion: Extend the reach of your app by converting it into a mobile application. Developing mobile apps for Android and iOS platforms can help you tap into a broader user base and provide a more convenient and accessible new_feature_1experience
 
 - [ ] **[User Account Recovery]**
