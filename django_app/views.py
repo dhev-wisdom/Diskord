@@ -93,8 +93,7 @@ def room(request, pk):
     return render(request, 'django_app/room.html', context)
 
 def navbar(request):
-    user = request.user
-    return render(request, 'django_app/navbar.html', {"user": user})
+    return render(request, 'django_app/navbar.html')
 
 def userProfile(request, pk):
     user = User.objects.get(id=pk)
