@@ -1,0 +1,73 @@
+{%  extends 'django_app/main.html' %}
+{%  block content %}
+{% load static %}
+  <main class="profile-page layout layout--3">
+    <div class="container">
+      <!-- Topics Start -->
+      <div class="topics">
+        {% include 'django_app/topic-component.html' %}
+      </div>
+      <!-- Topics End -->
+
+      <!-- Room List Start -->
+      <div class="roomList">
+        <div class="profile">
+          <div class="profile__avatar">
+            <div class="avatar avatar--large active">
+              {% if user.userprofile.image %}
+              <img src="{{user.userprofile.image.url}}" />
+              {% else %}
+              <img src="{% static 'images/avatar.svg' %}" />
+              {% endif %}
+            </div>
+          </div>
+          <div class="profile__info">
+            {% if user.first_name %}
+            <h3>{{user.first_name}} {{user.last_name}}</h3>
+            {% else %}
+            <h3>{{user.username}}</h3>
+            {% endif %}
+            <p>@{{user.username}}</p>
+            <p>{{user.email}}</p>
+            {% if request.user == user %}
+            <a href="{% url 'update-user' %}" class="btn btn--main btn--pill">Edit Profile</a>
+            {% endif %}
+          </div>
+          <div class="profile__about">
+            <h3>About</h3>
+            {% if user.userprofile.bio %}
+            <p>
+              {{user.userprofile.bio}}
+            </p>
+            {% else %}
+            <p>
+              Explorer of both inner and outer worlds 🌍. Passionate about art, music, and 
+              storytelling 🎨🎶. A lifelong learner 📚, I'm always seeking new adventures and
+              meaningful connections. Let's share experiences, create memories, and embrace the
+              beauty of life together.
+            </p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="roomList__header">
+          <div>
+            <h2>Diskord Rooms Hosted by {{user.username}}</a>
+            </h2>
+          </div>
+        </div>
+       
+        {% include 'django_app/feed-component.html' %}
+        
+      </div>
+      <!-- Room List End -->
+
+      <!-- Activities Start -->
+      <div class="activities">
+        {% include 'django_app/activity-component.html' %}
+      </div>
+      <!-- Activities End -->
+    </div>
+  </main>
+
+  {% endblock %}
