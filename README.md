@@ -1,5 +1,6 @@
 # Diskord
 
+<a id="readme-top"></a>
 <!--
 !!! IMPORTANT !!!
 
