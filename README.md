@@ -42,7 +42,7 @@ REQUIRED SECTIONS:
 # 📖 [Diskord] <a name="about-project"></a>
 
 
-**[Diskord]** is a platform for connecting with people around the world. It is a place like-minded people can meet up, discuss project objectives and work together till the goal is achieved.
+**[Diskord]** is where like-minded individuals unite to discuss project objectives and work together to achieve their goals. Connect with people from around the world who share your passions and transform your visions into realities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
