@@ -25,7 +25,11 @@
               <div class="activities__boxHeader roomListRoom__header">
                 <a href="{% url 'user-profile' message.user.id %}" class="roomListRoom__author">
                   <div class="avatar avatar--small">
-                    <img src="https://randomuser.me/api/portraits/women/11.jpg" />
+                    {% if message.user.userprofile.image %}
+                    <img src="{{message.user.userprofile.image.url}}" />
+                    {% else %}
+                    <img src="{% static 'images/avatar.svg' %}" />
+                    {% endif %}
                   </div>
                   <p>
                     @{{message.user}}
