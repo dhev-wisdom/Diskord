@@ -132,7 +132,7 @@ To run the project, execute the following command:
 
 > Enhanced Upload Size Limit: To improve app performance and prevent excessive resource usage, consider implementing a more robust system for limiting the size of file uploads. This ensures that large uploads do not slow down the application, improving overall user experience.
 
-> Mobile App Conversion: Extend the reach of your app by converting it into a mobile application. Developing mobile apps for Android and iOS platforms can help you tap into a broader user base and provide a more convenient and accessible new_feature_1experience
+> Mobile App Conversion: Extend the reach of your app by converting it into a mobile application. Developing mobile apps for Android and iOS platforms can help you tap into a broader user base and provide a more convenient and accessible experience for users.
 
 - [ ] **[User Account Recovery]**
 - [ ] **[Enhanced Upload Size Limit]**
