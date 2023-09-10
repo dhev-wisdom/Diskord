@@ -24,7 +24,7 @@ class UserForm(ModelForm):
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'username', 'email']
-        exclude = ['email']
+        exclude = ['']
 
     image = ImageField(
         required=False,

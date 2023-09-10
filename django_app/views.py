@@ -169,7 +169,7 @@ def deleteMessage(request, pk):
         return redirect('home')
         
     
-    return render(request, 'django_app/delete.html', {'obj': message})
+    return render(request, 'django_app/delete.html', {'obj': message.body})
 
 @login_required(login_url='login')
 def updateUser(request):
