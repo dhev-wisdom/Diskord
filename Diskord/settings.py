@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import django_heroku
 import dj_database_url
 from pathlib import Path
 import os
@@ -107,21 +108,20 @@ WSGI_APPLICATION = 'Diskord.wsgi.application'
 
 # Postgres database
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": os.environ.get("DATABASE_NAME", ""),
-#         "USER": os.environ.get("DATABASE_USER", ""),
-#         "PASSWORD": os.environ.get("DATABASE_PASSWORD", ""),
-#         "DATABASE_URL": os.environ.get("DATABASE_URL", ""),
-#         "HOST": os.environ.get("DATABASE_HOST", ""),
-#         "PORT": "5432",
-#     }
-# }
-
 DATABASES = {
-    "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "d8c8ftgh0v7uft",
+        "USER": "kbnclyvnzppgrk",
+        "PASSWORD": "107b407d208bb4de0852db4873ce70a4fe82421a27d962cc69dcb49acbc3de36",
+        "HOST": "ec2-54-234-13-16.compute-1.amazonaws.com",
+        "PORT": "5432",
+    }
 }
+
+# DATABASES = {
+#     "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+# }
 
 
 # Password validation
@@ -175,3 +175,5 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+django_heroku.settings(locals())
