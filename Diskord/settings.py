@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'Diskord.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "d8c8ftgh0v7uft",
         "USER": "kbnclyvnzppgrk",
         "PASSWORD": "107b407d208bb4de0852db4873ce70a4fe82421a27d962cc69dcb49acbc3de36",
