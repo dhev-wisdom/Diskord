@@ -92,16 +92,28 @@ WSGI_APPLICATION = 'Diskord.wsgi.application'
 
 # MySql Database
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": os.environ.get("DATABASE_NAME", ""),
+#         "USER": os.environ.get("DATABASE_USER", ""),
+#         "PASSWORD": os.environ.get("DATABASE_PASSWORD", ""),
+#         "HOST": os.environ.get("DATABASE_HOST"),
+#         "PORT": "3306",
+#     }
+# }
 
+
+# Postgres database
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get("DATABASE_NAME", ""),
         "USER": os.environ.get("DATABASE_USER", ""),
         "PASSWORD": os.environ.get("DATABASE_PASSWORD", ""),
-        "HOST": os.environ.get("DATABASE_HOST"),
-        "PORT": "3306",
+        "HOST": "",
+        "PORT": "",
     }
 }
 
